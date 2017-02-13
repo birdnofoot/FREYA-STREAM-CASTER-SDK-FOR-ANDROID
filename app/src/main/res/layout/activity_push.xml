@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <android.view.SurfaceView
+        android:id="@+id/surface"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+	/>
+		 <Button
+            android:id="@+id/live_control"
+            android:layout_height="50dp"
+            android:layout_width="70dp"
+            android:onClick="changeButtonColor"
+            android:text="推流"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/self_btn_style"
+            >       
+        </Button>
+        
+        <Button
+            android:id="@+id/camera_change"
+            android:layout_height="35dp"
+             android:layout_width="35dp"
+             android:onClick="changeButtonColor"
+             android:layout_alignParentBottom="true"
+			 android:layout_alignParentLeft="true"
+             android:background="@drawable/btn_camera"
+            >       
+        </Button>
+        
+    	<Button
+            android:id="@+id/flashlight_camera"
+            android:layout_height="35dp"
+            android:layout_width="35dp"
+            android:onClick="changeButtonColor"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_flashlight"
+            >       
+        </Button>
+       
+      
+            		
+    
+ </RelativeLayout>

@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.freya.stream.caster.MainActivity">
+
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:background="#ff1a1e23"
+                android:paddingEnd="30dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingStart="30dp">
+
+                <com.freya.stream.caster.navigationtabstrip.NavigationTabStrip
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_gravity="center"
+                    app:nts_active_color="#42a4d1"
+                    app:nts_color="#42a4d1"
+                    app:nts_corners_radius="1dp"
+                    app:nts_inactive_color="#81ffffff"
+                    app:nts_size="15sp"
+                    app:nts_titles="@array/address"
+                    app:nts_weight="3dp"/>
+
+            </FrameLayout>
+
+             <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.25"
+                android:background="#ff1a1e23">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="18dp"
+                    android:background="#182128"/>
+
+                <com.freya.stream.caster.navigationtabstrip.NavigationTabStrip
+                    android:id="@+id/orientation"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginStart="30dp"
+                    app:nts_active_color="#fff"
+                    app:nts_color="#3cdedd"
+                    app:nts_corners_radius="3.5dp"
+                    app:nts_factor="0.8"
+                    app:nts_gravity="bottom"
+                    app:nts_inactive_color="#81ffffff"
+                    app:nts_titles="@array/screen"
+                    app:nts_type="point"
+                    app:nts_weight="7dp"/>
+
+            </FrameLayout>
+
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.25"
+                android:background="#ff1a1e23">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="18dp"
+                    android:background="#182128"/>
+
+                <com.freya.stream.caster.navigationtabstrip.NavigationTabStrip
+                    android:id="@+id/camera"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginStart="30dp"
+                    app:nts_active_color="#fff"
+                    app:nts_color="#2bd593"
+                    app:nts_corners_radius="3.5dp"
+                    app:nts_factor="0.8"
+                    app:nts_gravity="bottom"
+                    app:nts_inactive_color="#81ffffff"
+                    app:nts_titles="@array/camera"
+                    app:nts_type="point"
+                    app:nts_weight="7dp"/>
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.25"
+                android:background="#ff1a1e23">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="18dp"
+                    android:background="#182128"/>
+
+                <com.freya.stream.caster.navigationtabstrip.NavigationTabStrip
+                    android:id="@+id/pushmode"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginStart="30dp"
+                    app:nts_active_color="#fff"
+                    app:nts_color="#7c93f8"
+                    app:nts_corners_radius="3.5dp"
+                    app:nts_factor="0.8"
+                    app:nts_gravity="bottom"
+                    app:nts_inactive_color="#81ffffff"
+                    app:nts_titles="@array/pushmode"
+                    app:nts_type="point"
+                    app:nts_weight="7dp"/>
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.25"
+                android:background="#ff1a1e23">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="18dp"
+                    android:background="#182128"/>
+
+                <com.freya.stream.caster.navigationtabstrip.NavigationTabStrip
+                    android:id="@+id/videorate"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginStart="30dp"
+                    app:nts_active_color="#fff"
+                    app:nts_color="#e99a3d"
+                    app:nts_corners_radius="3.5dp"
+                    app:nts_factor="0.8"
+                    app:nts_gravity="bottom"
+                    app:nts_inactive_color="#81ffffff"
+                    app:nts_titles="@array/frame"
+                    app:nts_type="point"
+                    app:nts_weight="7dp"/>
+
+            </FrameLayout>
+
+
+
+            <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:background="#ff1a1e23">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:background="#182128"/>
+
+            <com.freya.stream.caster.navigationtabstrip.NavigationTabStrip
+                android:id="@+id/fps"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginStart="30dp"
+                app:nts_active_color="#fff"
+                app:nts_color="#824ce6"
+                app:nts_corners_radius="3.5dp"
+                app:nts_factor="0.8"
+                app:nts_gravity="bottom"
+                app:nts_inactive_color="#81ffffff"
+                app:nts_titles="@array/rate"
+                app:nts_type="point"
+                app:nts_weight="7dp"/>
+
+        </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.25"
+                android:background="#ff1a1e23">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="18dp"
+                    android:background="#182128"/>
+
+                <com.freya.stream.caster.navigationtabstrip.NavigationTabStrip
+                    android:id="@+id/soundrate"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginStart="30dp"
+                    app:nts_active_color="#fff"
+                    app:nts_color="#e67777"
+                    app:nts_corners_radius="3.5dp"
+                    app:nts_factor="0.8"
+                    app:nts_gravity="bottom"
+                    app:nts_inactive_color="#81ffffff"
+                    app:nts_titles="@array/sound"
+                    app:nts_type="point"
+                    app:nts_weight="7dp"/>
+
+            </FrameLayout>
+
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.25"
+                android:background="#ff1a1e23">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="18dp"
+                    android:background="#182128"/>
+
+                <com.freya.stream.caster.navigationtabstrip.NavigationTabStrip
+                    android:id="@+id/soundhz"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginStart="30dp"
+                    app:nts_active_color="#fff"
+                    app:nts_color="#f34d6c"
+                    app:nts_corners_radius="3.5dp"
+                    app:nts_factor="0.8"
+                    app:nts_gravity="bottom"
+                    app:nts_inactive_color="#81ffffff"
+                    app:nts_titles="@array/soundhz"
+                    app:nts_type="point"
+                    app:nts_weight="7dp"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.25"
+                android:background="#ff1a1e23">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="18dp"
+                    android:background="#182128"/>
+
+                <com.freya.stream.caster.navigationtabstrip.NavigationTabStrip
+                    android:id="@+id/encodemode"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginStart="30dp"
+                    app:nts_active_color="#fff"
+                    app:nts_color="#d1449e"
+                    app:nts_corners_radius="3.5dp"
+                    app:nts_factor="0.8"
+                    app:nts_gravity="bottom"
+                    app:nts_inactive_color="#81ffffff"
+                    app:nts_titles="@array/encodemode"
+                    app:nts_type="point"
+                    app:nts_weight="7dp"/>
+
+            </FrameLayout>
+
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.35"
+                android:background="#ff1a1e23"
+                android:paddingEnd="30dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingStart="30dp">
+
+                <com.freya.stream.caster.navigationtabstrip.NavigationTabStrip
+                    android:id="@+id/level"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    app:nts_active_color="#fff"
+                    app:nts_color="#ff1748"
+                    app:nts_factor="2.8"
+                    app:nts_corners_radius="1.5dp"
+                    app:nts_inactive_color="#81ffffff"
+                    app:nts_titles="@array/titles"
+                    app:nts_weight="3dp"/>
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:background="#ff1a1e23"
+                android:paddingEnd="30dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingStart="30dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/startRtmpButton"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg"
+                    android:textColor="#fff"
+                    android:text="摄像头推流"
+                    />
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:background="#ff1a1e23"
+                android:paddingEnd="30dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingStart="30dp">
+
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rtmpUrleditText"
+        android:layout_alignParentTop="true"
+        android:visibility="invisible"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true" />
+
+
+
+
+</RelativeLayout>

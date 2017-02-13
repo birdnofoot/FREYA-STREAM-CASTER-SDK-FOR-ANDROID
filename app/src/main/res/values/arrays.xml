@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="titles">
+        <item>低清</item>
+        <item>中清</item>
+        <item>高清</item>
+        <item>超清</item>
+        <item>自定义</item>
+    </string-array>
+
+    <string-array name="screen">
+        <item>横屏</item>
+        <item>竖屏</item>
+    </string-array>
+
+    <string-array name="camera">
+        <item>前置摄像头</item>
+        <item>后置摄像头</item>
+    </string-array>
+
+    <string-array name="address">
+        <item>查看推流地址</item>
+        <item>自定义推流地址</item>
+    </string-array>
+
+    <string-array name="rate">
+        <item>20FPS</item>
+        <item>24FPS</item>
+        <item>自定义</item>
+    </string-array>
+
+    <string-array name="frame">
+        <item>800KBPS</item>
+        <item>1200KBPS</item>
+        <item>自定义</item>
+    </string-array>
+
+    <string-array name="sound">
+        <item>24KBPS</item>
+        <item>32KBPS</item>
+        <item>自定义</item>
+    </string-array>
+
+    <string-array name="soundhz">
+        <item>22050HZ</item>
+        <item>44100HZ</item>
+        <item>自定义</item>
+    </string-array>
+
+    <string-array name="encodemode">
+        <item>B:ULTRAFAST:L</item>
+        <item>M:SUPERFAST:H</item>
+        <item>自定义</item>
+    </string-array>
+
+    <string-array name="pushmode">
+        <item>推画面和声音</item>
+        <item>只推画面</item>
+        <item>只推声音</item>
+    </string-array>
+
+</resources>
