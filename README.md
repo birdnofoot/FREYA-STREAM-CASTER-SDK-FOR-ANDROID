@@ -6,9 +6,9 @@ FREYA STREAM CASTER SDK(ANDROID)是一款优秀的免费安卓RTMP推流SDK，�
 联动项目：[FREYA LIVE LIBRARY OPTIMIZER FOR ANDROID](https://github.com/jkkj93/FREYA-LIVE-LIBRARY-OPTIMIZER-FOR-ANDROID) -- RTMP直播推流常用库的编译简化/优化工具
 </br>
 </br>
-![image](https://github.com/jkkj93/FREYA-STREAM-CASTER-SDK-FOR-ANDROID/raw/master/screenshots/main.jpg)
-![image](https://github.com/jkkj93/FREYA-STREAM-CASTER-SDK-FOR-ANDROID/raw/master/screenshots/push_portrait.jpg)
-![image](https://github.com/jkkj93/FREYA-STREAM-CASTER-SDK-FOR-ANDROID/raw/master/screenshots/push_landscape.jpg)
+![main](https://github.com/jkkj93/FREYA-STREAM-CASTER-SDK-FOR-ANDROID/raw/master/screenshots/main.jpg)
+![push_portrait](https://github.com/jkkj93/FREYA-STREAM-CASTER-SDK-FOR-ANDROID/raw/master/screenshots/push_portrait.jpg)
+![push_landscape](https://github.com/jkkj93/FREYA-STREAM-CASTER-SDK-FOR-ANDROID/raw/master/screenshots/push_landscape.jpg)
 </br>
 </br>
 一、系统要求
