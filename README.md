@@ -24,7 +24,7 @@ FREYA STREAM CASTER SDK(ANDROID)是一款优秀的免费安卓RTMP推流SDK，�
 </br>
 3.运行环境默认为ANDROID 4.0.3及以上系统
 </br>
-如有需要，可通过修改JNI层编译脚本的相关变量，使本软件支持更低版本的ANDROID系统，详见“如何编译JNI层”部分
+如有需要，可通过修改JNI层编译脚本中的相关变量，使本软件支持更低版本的ANDROID系统，详见“如何编译JNI层”部分
 </br>
 </br>
 二、支持平台
