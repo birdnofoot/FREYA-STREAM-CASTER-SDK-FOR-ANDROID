@@ -238,7 +238,7 @@ freya_sdk_compile_mips64.sh用于编译MIPS64库文件
 8.定义NDKROOT_PATH变量，配置NDK所在的目录位置
 </br>
 </br>
-9.定义PLATFORM_*_API变量(*代表ARM、ARMV7A、ARM64V8A、X86、X86_64、MIPS、MIPS64)，配置对应各平台的ANDROID API级别，降低API级别可使本软件支持低版本的ANDROID系统
+9.定义PLATFORM_\*\_API变量(\*代表ARM、ARMV7A、ARM64V8A、X86、X86_64、MIPS、MIPS64)，配置对应各平台的ANDROID API级别，降低API级别可使本软件支持低版本的ANDROID系统
 </br>
 </br>
 10.定义PLATFORM_NDK_TOOLCHAIN_VERSION变量，配置对应的TOOLCHAIN版本，默认为4.9，一般无需修改
