@@ -51,7 +51,7 @@ public class MainActivity extends Activity {
     private int mEnable_Video = 1;                                 //定义是否推视频   0代表不推,1代表推
     private int mEnable_Sound = 1;                                 //定义是否推音频   0代表不推,1代表推
     private int mVideo_Rate = 1200;                                //定义视频码率   单位(KBPS)
-    private int mFps = 20;                                          //定义视频帧率   单位(FPS)
+    private int mFps = 2;                                           //定义视频GOP容量   单位(FRAMES)   GOP容量参数用于取得视频质量、压缩率、延迟的平衡   GOP容量值越小,视频质量越高、压缩率越小、延迟越小   GOP容量值越大,视频质量越低、压缩率越大、延迟越大
     private int mSound_Rate = 32;                                  //定义音频码率   单位(KBPS)
     private int mSound_Hz = 44100;                                 //定义音频采样率   单位(HZ)   常用频率11025HZ 22050HZ 44100HZ  其中44100HZ兼容性最好能支持绝大多数移动设备
     private int mSound_Channels = 2;                              //定义音频声道数   1代表单声道,2代表立体声
@@ -73,7 +73,7 @@ public class MainActivity extends Activity {
     private int mVideo_Height_Back = 720;                        //定义后置摄像头视频分辨率高度
 
     public boolean isNumeric(String str){
-     Pattern pattern = Pattern.compile("[0-9]*");
+        Pattern pattern = Pattern.compile("[0-9]*");
         Matcher isNum = pattern.matcher(str);
         if( !isNum.matches() ){
             return false;
@@ -576,7 +576,7 @@ public class MainActivity extends Activity {
         });
 //设置视频码率结束
 
-//设置视频帧率开始
+//设置视频GOP容量开始
         mFpsNavigationTabStrip.setOnTabStripSelectedIndexListener(new NavigationTabStrip.OnTabStripSelectedIndexListener() {
             @Override
             public void onStartTabSelected(String title, int index) {
@@ -584,28 +584,28 @@ public class MainActivity extends Activity {
             @Override
             public void onEndTabSelected(String title, int index) {
                 if (index==0){
-                    mFps = 20;
+                    mFps = 2;
                 }
                 if (index==1){
-                    mFps = 24;
+                    mFps = 5;
                 }
                 if (index==2){
                     final EditText medit_text = new EditText(MainActivity.this);
                     medit_text.setText(Integer.toString(mFps));
                     medit_text.setTextColor(0xffffffff);
-                    new AlertDialog.Builder(MainActivity.this,AlertDialog.THEME_DEVICE_DEFAULT_DARK).setTitle("请输入视频帧率参数(FPS)")
+                    new AlertDialog.Builder(MainActivity.this,AlertDialog.THEME_DEVICE_DEFAULT_DARK).setTitle("请输入视频GOP容量参数")
                             .setIcon(android.R.drawable.ic_dialog_info)
                             .setView(medit_text)
                             .setPositiveButton("确定", new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
                                     String input = medit_text.getText().toString();
                                     if (input.equals("") || !isNumeric(input)) {
-                                        Toast.makeText(getApplicationContext(), "请输入正确的视频帧率参数" , Toast.LENGTH_LONG).show();
-                                        mFps = 20;
+                                        Toast.makeText(getApplicationContext(), "请输入正确的视频GOP容量参数" , Toast.LENGTH_LONG).show();
+                                        mFps = 2;
                                         mFpsNavigationTabStrip.setTabIndex(0, true);
                                     }
                                     else {
-                                        Toast.makeText(getApplicationContext(), "视频帧率参数已应用", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(getApplicationContext(), "视频GOP容量参数已应用", Toast.LENGTH_SHORT).show();
                                         mFps = Integer.valueOf(input).intValue();
                                     }
                                 }
@@ -615,7 +615,7 @@ public class MainActivity extends Activity {
                 }
             }
         });
-//设置视频帧率结束
+//设置视频GOP容量结束
 
 //设置音频码率开始
         mSoundrateNavigationTabStrip.setOnTabStripSelectedIndexListener(new NavigationTabStrip.OnTabStripSelectedIndexListener() {
@@ -1091,10 +1091,10 @@ public class MainActivity extends Activity {
                                     for (int cts = 0; cts < resolution_back_final.length; cts++) {
                                         String [] tempres_f2 = null;
                                         tempres_f2 = resolution_back_final[cts].split("\\*");
-                                         if (min_val >= Math.abs(mVideo_Width_Front*mVideo_Height_Front-Integer.valueOf(tempres_f2[0])*Integer.valueOf(tempres_f2[1]))){
-                                             min_val = Math.abs(mVideo_Width_Front*mVideo_Height_Front-Integer.valueOf(tempres_f2[0])*Integer.valueOf(tempres_f2[1]));
-                                             got_close = resolution_back_final[cts];
-                                         }
+                                        if (min_val >= Math.abs(mVideo_Width_Front*mVideo_Height_Front-Integer.valueOf(tempres_f2[0])*Integer.valueOf(tempres_f2[1]))){
+                                            min_val = Math.abs(mVideo_Width_Front*mVideo_Height_Front-Integer.valueOf(tempres_f2[0])*Integer.valueOf(tempres_f2[1]));
+                                            got_close = resolution_back_final[cts];
+                                        }
                                     }
 
                                     String [] tempres_f3 = null;

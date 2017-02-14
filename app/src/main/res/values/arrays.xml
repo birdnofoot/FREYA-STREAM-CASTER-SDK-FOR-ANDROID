@@ -25,8 +25,8 @@
     </string-array>
 
     <string-array name="rate">
-        <item>20FPS</item>
-        <item>24FPS</item>
+        <item>2FRAMES</item>
+        <item>5FRAMES</item>
         <item>自定义</item>
     </string-array>
 

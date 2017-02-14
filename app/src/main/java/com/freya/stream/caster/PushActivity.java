@@ -43,7 +43,7 @@ public class PushActivity extends Activity implements Callback {
 
     private int mVideoRate = 1200;
 
-    private int mVideoFps = 20;
+    private int mVideoFps = 2;
 
     private int mSoundRate = 32;
 
@@ -80,7 +80,7 @@ public class PushActivity extends Activity implements Callback {
         int stringEnableVideo = intent.getIntExtra("enablevideo",1);
         int stringEnableAudio = intent.getIntExtra("enableaudio",1);
         mVideoRate = intent.getIntExtra("videorate",1200);
-        mVideoFps = intent.getIntExtra("videofps",20);
+        mVideoFps = intent.getIntExtra("videofps",2);
         mSoundRate = intent.getIntExtra("soundrate",32);
         mSoundHz = intent.getIntExtra("soundhz",44100);
         mSoundChannels = intent.getIntExtra("soundchannels",2);
@@ -186,12 +186,12 @@ public class PushActivity extends Activity implements Callback {
                     }
                     else{
                         if (mCameraMode == 1) {
-                             if (mResolutionCommonS.indexOf(mVideoWidthFront+"*"+mVideoHeightFront)!=-1){
-                                 mStreamProcessor.SwitchCamera();
-                             }
+                            if (mResolutionCommonS.indexOf(mVideoWidthFront+"*"+mVideoHeightFront)!=-1){
+                                mStreamProcessor.SwitchCamera();
+                            }
                             else{
-                                 Toast.makeText(getApplicationContext(), "要切换的摄像头不支持当前分辨率", Toast.LENGTH_SHORT).show();
-                             }
+                                Toast.makeText(getApplicationContext(), "要切换的摄像头不支持当前分辨率", Toast.LENGTH_SHORT).show();
+                            }
                         }
                         else{
                             if (mResolutionCommonS.indexOf(mVideoWidthBack+"*"+mVideoHeightBack)!=-1){
