@@ -32,7 +32,7 @@ FREYA STREAM CASTER SDK(ANDROID)是一款优秀的免费安卓RTMP推流SDK，�
 </br>
 FREYA STREAM CASTER SDK(ANDROID)是目前支持平台数最多的RTMP直播推流SDK
 </br>
-支持ARM、ARMV7-A、ARM64-V8A、X86、X86_64、MIPS、MIPS64全平台，并针对这些平台进行了极致优化
+支持ARM、ARMV7-A、ARM64-V8A、X86、X86_64、MIPS、MIPS64全平台，并针对这些平台进行了极致优化，延迟仅为1-2S
 </br>
 </br>
 三、软件功能
