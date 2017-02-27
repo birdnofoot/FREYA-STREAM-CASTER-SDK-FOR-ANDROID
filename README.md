@@ -2,7 +2,7 @@
 :zap:FREYA STREAM CASTER SDK(ANDROID)是一款优秀的免费安卓RTMP推流SDK，适用于移动设备直播，JNI层全开源
 </br>
 </br>
-拥有极强的性能与兼容性，是目前唯一支持全平台的软编推流SDK。针对ARM、ARMV7-A、ARM64-V8A、X86、X86_64、MIPS、MIPS64全平台极致优化。让低端设备也可以流畅地进行高清推流
+拥有极强的性能与兼容性，是目前唯一支持全平台且JNI层开源的软编推流SDK。针对ARM、ARMV7-A、ARM64-V8A、X86、X86_64、MIPS、MIPS64全平台极致优化。让低端设备也可以流畅地进行高清推流
 </br>
 </br>
 联动项目：[FREYA LIVE LIBRARY OPTIMIZER FOR ANDROID](https://github.com/jkkj93/FREYA-LIVE-LIBRARY-OPTIMIZER-FOR-ANDROID) -- RTMP直播推流常用库的编译简化/优化工具
