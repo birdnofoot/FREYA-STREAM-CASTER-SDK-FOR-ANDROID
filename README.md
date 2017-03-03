@@ -289,7 +289,7 @@ freya_sdk_compile_mips64.sh用于编译MIPS64库文件
 本软件参考使用了以下软件的代码，向这些软件的作者致以最高的敬意：
 </br>
 </br>
-1.[MOLiveStreamSDK](https://github.com/MOLiveStreamSDK/MOLiveStreamSDK)
+1.[MOLiveStreamSDK](https://github.com/MOLiveStreamSDK/MOLiveStreamSDK) (代码使用已获作者授权，再次感谢作者无私的共享精神)
 </br>
 2.[FFMPEG](https://github.com/FFmpeg/FFmpeg)
 </br>
