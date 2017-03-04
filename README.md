@@ -289,21 +289,21 @@ freya_sdk_compile_mips64.sh用于编译MIPS64库文件
 本软件参考使用了以下软件的代码，向这些软件的作者致以最高的敬意：
 </br>
 </br>
-1.[MOLiveStreamSDK](https://github.com/MOLiveStreamSDK/MOLiveStreamSDK) (代码使用已获作者授权，再次感谢作者无私的共享精神)
+1.[MOLiveStreamSDK](https://github.com/MOLiveStreamSDK/MOLiveStreamSDK)  (遵守GPL协议，代码使用已获作者授权，再次感谢作者无私的共享精神)
 </br>
-2.[FFMPEG](https://github.com/FFmpeg/FFmpeg)
+2.[FFMPEG](https://github.com/FFmpeg/FFmpeg)  (遵守GPL协议)
 </br>
-3.[X264](http://www.videolan.org/developers/x264.html)
+3.[X264](http://www.videolan.org/developers/x264.html)  (遵守GPL协议)
 </br>
-4.[FDKAAC](https://github.com/mstorsjo/fdk-aac)
+4.[FDKAAC](https://github.com/mstorsjo/fdk-aac)  (遵守Apache协议)
 </br>
-5.[LIBRTMP(RTMPDUMP)](http://rtmpdump.mplayerhq.hu)
+5.[LIBRTMP(RTMPDUMP)](http://rtmpdump.mplayerhq.hu)  (遵守GPL协议)
 </br>
-6.[POLARSSL](https://tls.mbed.org)
+6.[POLARSSL](https://tls.mbed.org)  (遵守GPL协议)
 </br>
-7.[LIBYUV](https://code.google.com/p/libyuv)
+7.[LIBYUV](https://code.google.com/p/libyuv)  (遵守BSD协议)
 </br>
-8.[NavigationTabStrip](https://github.com/Devlight/NavigationTabStrip)
+8.[NavigationTabStrip](https://github.com/Devlight/NavigationTabStrip)  (遵守Apache协议)
 </br>
 </br>
 作者:jkkj93
