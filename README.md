@@ -283,27 +283,27 @@ freya_sdk_compile_mips64.sh用于编译MIPS64库文件
 2.本软件遵守GPL协议，旨在回馈开源社区，任何人均可免费使用本软件代码，进行软件开发或修改，同时本软件也不接受任何形式的捐赠
 </br>
 </br>
-八、致谢
+八、致谢与协议
 </br>
 </br>
 本软件参考使用了以下软件的代码，向这些软件的作者致以最高的敬意：
 </br>
 </br>
-1.[MOLiveStreamSDK](https://github.com/MOLiveStreamSDK/MOLiveStreamSDK)  (遵守GPL协议，代码使用已获作者授权，再次感谢作者无私的共享精神)
+1.[MOLiveStreamSDK](https://github.com/MOLiveStreamSDK/MOLiveStreamSDK)  (遵守[GPL协议](https://github.com/jkkj93/FREYA-STREAM-CASTER-SDK-FOR-ANDROID/blob/master/LICENSE)，代码使用已获作者授权，再次感谢作者无私的共享精神)
 </br>
-2.[FFMPEG](https://github.com/FFmpeg/FFmpeg)  (遵守GPL协议)
+2.[FFMPEG](https://github.com/FFmpeg/FFmpeg)  (遵守[GPL协议](https://github.com/jkkj93/FREYA-STREAM-CASTER-SDK-FOR-ANDROID/blob/master/LICENSE))
 </br>
-3.[X264](http://www.videolan.org/developers/x264.html)  (遵守GPL协议)
+3.[X264](http://www.videolan.org/developers/x264.html)  (遵守[GPL协议](https://github.com/jkkj93/FREYA-STREAM-CASTER-SDK-FOR-ANDROID/blob/master/LICENSE))
 </br>
-4.[FDKAAC](https://github.com/mstorsjo/fdk-aac)  (遵守Apache协议)
+4.[FDKAAC](https://github.com/mstorsjo/fdk-aac)  (遵守[FDK协议](https://github.com/jkkj93/FREYA-STREAM-CASTER-SDK-FOR-ANDROID/blob/master/LICENSE_FDKAAC))
 </br>
-5.[LIBRTMP(RTMPDUMP)](http://rtmpdump.mplayerhq.hu)  (遵守GPL协议)
+5.[LIBRTMP(RTMPDUMP)](http://rtmpdump.mplayerhq.hu)  (遵守[GPL协议](https://github.com/jkkj93/FREYA-STREAM-CASTER-SDK-FOR-ANDROID/blob/master/LICENSE))
 </br>
-6.[POLARSSL](https://tls.mbed.org)  (遵守GPL协议)
+6.[POLARSSL](https://tls.mbed.org)  (遵守[GPL协议](https://github.com/jkkj93/FREYA-STREAM-CASTER-SDK-FOR-ANDROID/blob/master/LICENSE))
 </br>
-7.[LIBYUV](https://code.google.com/p/libyuv)  (遵守BSD协议)
+7.[LIBYUV](https://code.google.com/p/libyuv)  (遵守[BSD协议](https://github.com/jkkj93/FREYA-STREAM-CASTER-SDK-FOR-ANDROID/blob/master/LICENSE_LIBYUV)，第三方组件遵守[BSD协议](https://github.com/jkkj93/FREYA-STREAM-CASTER-SDK-FOR-ANDROID/blob/master/LICENSE_LIBYUV_THIRD_PARTY))
 </br>
-8.[NavigationTabStrip](https://github.com/Devlight/NavigationTabStrip)  (遵守Apache协议)
+8.[NavigationTabStrip](https://github.com/Devlight/NavigationTabStrip)  (遵守[MIT/Apache协议](https://github.com/jkkj93/FREYA-STREAM-CASTER-SDK-FOR-ANDROID/blob/master/LICENSE_NAVIGATIONTABSTRIP))
 </br>
 </br>
 作者:jkkj93
